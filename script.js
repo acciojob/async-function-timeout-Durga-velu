@@ -13,8 +13,12 @@ let delay=document.getElementById("delay")
 		})
 	}
 
-async funtion check()=>
-	
+async function check()=>{
+	let checkValue=await check;
+	let output=document.getElementById("output");
+	output.innerHTML=output;
+}
+	check()
 })
 
 
