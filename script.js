@@ -9,6 +9,7 @@ let delay=document.getElementById("delay")
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				resolve(text.value)
+				reject(error)
 				
 			},delay.value)
 		})
