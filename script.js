@@ -17,7 +17,7 @@ let delay=document.getElementById("delay")
 
 async function displaytext()=>{
 	try{
-		let checkValue=await check;
+		let checkValue=await check();
 	let output=document.getElementById("output");
 	output.innerHTML=checkValue;
 	}
