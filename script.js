@@ -2,7 +2,6 @@
 
 let btn=document.getElementById("btn")
 
-
 let delay=document.getElementById("delay")
 	let text=document.getElementById("text")
 	let check=()=>{
