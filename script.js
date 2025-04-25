@@ -2,26 +2,29 @@
 
 let btn=document.getElementById("btn")
 
-btn.addEventListener(("click"),()=>{
+
 let delay=document.getElementById("delay")
 	let text=document.getElementById("text")
 	let check=()=>{
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				resolve(text.value)
+				
 			},delay.value)
 		})
 	}
 
-async function checktext()=>{
-	let checkValue=await check;
+async function displaytext()=>{
+	try{
+		let checkValue=await check;
 	let output=document.getElementById("output");
-	output.innerHTML=output;
+	output.innerHTML=checkValue;
+	}
+	catch(error){
+		      console.error("Error:", error);
+	}
 }
-	checktext()
-})
 
-
-
+btn.addEventListener("click",displaytext)
 
 
